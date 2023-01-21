@@ -39,17 +39,17 @@ export function Falsy({ children }: { children: React.ReactNode }) {
 
 Falsy.prototype.evaluate = (expr: unknown) => !expr;
 
-export function Default({ children }: { children: React.ReactNode }) {
+export function Else({ children }: { children: React.ReactNode }) {
   return children as JSX.Element;
 }
 
-Default.prototype.evaluate = (expr: unknown) => true;
+Else.prototype.evaluate = (expr: unknown) => true;
 
-interface RenderIfProps {
-  expr?: unknown;
+interface RenderProps {
+  when?: unknown;
   children: JSX.Element;
 }
 
-export function RenderIf({ expr, children }: RenderIfProps) {
-  return expr ? children : null;
+export function Render({ when, children }: RenderProps) {
+  return when ? children : null;
 }
