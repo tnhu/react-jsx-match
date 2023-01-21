@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-
-interface MatchProps {
+export interface MatchProps {
   expr?: unknown;
   children: JSX.Element[];
 }
