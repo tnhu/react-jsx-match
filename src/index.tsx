@@ -44,3 +44,12 @@ export function Default({ children }: { children: React.ReactNode }) {
 }
 
 Default.prototype.evaluate = (expr: unknown) => true;
+
+interface RenderIfProps {
+  expr?: unknown;
+  children: JSX.Element;
+}
+
+export function RenderIf({ expr, children }: RenderIfProps) {
+  return expr ? children : null;
+}
