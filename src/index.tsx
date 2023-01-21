@@ -47,9 +47,9 @@ Else.prototype.evaluate = (expr: unknown) => true;
 
 interface RenderProps {
   when?: unknown;
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 export function Render({ when, children }: RenderProps) {
-  return when ? children : null;
+  return when ? (children as JSX.Element) : null;
 }
