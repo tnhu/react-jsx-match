@@ -23,17 +23,29 @@ function Example() {
   return (
     <>
       <Match expr={variable}>
+        {/* Match exact values */}
+        <Case val={0}>Zero</Case>
+        <Case val={100}>A hundred</Case>
+
+        {/* loose mean `==` */}
         <Case val="1" loose>
           One
         </Case>
+
+        {/* val can be a callback */}
         <Case val={(num: number) => num === 4}>Four</Case>
-        <Case val={0}>Zero</Case>
-        <Case val={100}>A hundred</Case>
+
+        {/* Match truthy values */}
         <Truthy>True</Truthy>
+
+        {/* Match falsy values */}
         <Falsy>False</Falsy>
+
+        {/* If nothing above matches... */}
         <Else>Everything else.</Else>
       </Match>
 
+      {/* Render children only if when condition is truthy */}
       <Render when={variable > 100}>More than a hundred</Render>
     </>
   );

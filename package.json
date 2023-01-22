@@ -1,6 +1,6 @@
 {
   "name": "react-jsx-match",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "tnhu AT me DOT com",
   "type": "module",
   "module": "./dist/index.js",
@@ -27,12 +27,7 @@
     "build": "tsc"
   },
   "homepage": "https://github.com/tnhu/react-jsx-match",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/tnhu/react-jsx-match/blob/main/LICENSE.txt"
-    }
-  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tnhu/react-jsx-match.git"
