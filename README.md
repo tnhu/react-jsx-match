@@ -51,3 +51,10 @@ function Example() {
   );
 }
 ```
+
+## Development
+
+```sh
+npm i
+npm run build
+```
