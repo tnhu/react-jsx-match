@@ -27,7 +27,7 @@ function Example() {
         <Case val={0}>Zero</Case>
         <Case val={100}>A hundred</Case>
 
-        {/* loose mean `==` */}
+        {/* loose means `==` */}
         <Case val="1" loose>
           One
         </Case>
