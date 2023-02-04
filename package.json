@@ -1,6 +1,6 @@
 {
   "name": "react-jsx-match",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "author": "tnhu AT me DOT com",
   "type": "module",
   "module": "./dist/index.js",
@@ -23,7 +23,9 @@
     "react-jsx-match"
   ],
   "scripts": {
-    "build": "tsc && esbuild ./dist/index.js --minify --allow-overwrite --outfile=./dist/index.js"
+    "build": "tsc && esbuild ./dist/index.js --minify --allow-overwrite --outfile=./dist/index.js",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "homepage": "https://github.com/tnhu/react-jsx-match",
   "license": "MIT",
@@ -33,7 +35,11 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
+    "@types/react-test-renderer": "^18.0.0",
+    "@vitest/coverage-c8": "^0.28.4",
     "esbuild": "^0.17.5",
-    "typescript": "^4.9.5"
+    "react-test-renderer": "^18.2.0",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.4"
   }
 }

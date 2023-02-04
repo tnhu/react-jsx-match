@@ -43,7 +43,7 @@ export function Else({ children }: { children: React.ReactNode }) {
   return children as JSX.Element;
 }
 
-Else.prototype.evaluate = (expr: unknown) => true;
+Else.prototype.evaluate = () => true;
 
 interface RenderProps {
   when?: unknown;

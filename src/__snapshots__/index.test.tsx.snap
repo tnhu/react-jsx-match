@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Match renders Else when nothing is matched 1`] = `
+<p>
+  Nothing is matched.
+</p>
+`;

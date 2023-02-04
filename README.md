@@ -57,4 +57,6 @@ function Example() {
 ```sh
 npm i
 npm run build
+npm run test
+npm run coverage
 ```
